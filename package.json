@@ -1,15 +1,34 @@
 {
-  "name": "nice-ui",
-  "version": "1.0.0",
+  "name": "ui-nice",
+  "version": "0.0.3",
   "description": "A UI Toolkit built on Vue.js.",
-  "author": "chenxin <jitchenxin@qq.com>",
-  "private": true,
+  "author": "jitchenxin",
+  "main": "src/index.js",
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JIT-ChenXin/nice-ui.git"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "niceui",
+    "vue",
+    "nice-ui",
+    "UI",
+    "vue-nice-ui",
+    "nice-ui-vue",
+    "ui-nice"
+  ],
   "dependencies": {
+    "element-ui": "^2.13.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -31,7 +50,7 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
     "less": "^3.11.3",
-    "less-loader": "^6.1.0",
+    "less-loader": "^4.1.0",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
@@ -53,6 +72,11 @@
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JIT-ChenXin/nice-ui/issues"
+  },
+  "homepage": "https://github.com/JIT-ChenXin/nice-ui#readme",
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
